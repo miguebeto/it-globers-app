@@ -8,7 +8,8 @@ import { Lan } from '../components/Lan';
 import {
     BrowserRouter,
     Routes,
-    Route
+    Route,
+    Navigate
   } from "react-router-dom";
 
 
@@ -22,8 +23,7 @@ export const RouterApp = ({ vuelos }) => {
                   <Route exact path="/avianca" element={ <Avianca vuelos={ vuelos } /> } />
                   <Route exact path="/vivair" element={ <Vivair vuelos={ vuelos }/> } />
                   <Route exact path="/lan" element={ <Lan vuelos={ vuelos }/> } />
-
-                  <Route element={ HomeScreen } />
+                  <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </BrowserRouter>
   )
