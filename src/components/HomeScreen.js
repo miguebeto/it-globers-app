@@ -10,7 +10,7 @@ export const HomeScreen = () => {
       <h1>Home</h1>
       <h3 style={{ padding: "40px" }}>
         Hola, Bienvenido, sabemos que quieres viajar en un{" "}
-        {params.invoiceId === "it-globers-app" ? null : params.invoiceId}
+        {params.invoiceId === "it-globers-app" ? null : params.nameAirline}
       </h3>
       <Form />
     </div>

@@ -10,7 +10,7 @@ export const RouterApp = () => {
       <Header />
       <Routes>
         <Route path="/" element={<HomeScreen />}>
-          <Route path=":invoiceId" element={<HomeScreen />} />
+          <Route path=":nameAirline" element={<HomeScreen />} />
         </Route>
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
