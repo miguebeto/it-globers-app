@@ -1,9 +1,6 @@
 import React from 'react';
 import { Header } from '../header/Header';
 import { HomeScreen } from '../components/HomeScreen';
-import { Avianca } from '../components/Avianca';
-import { Vivair } from '../components/Vivair';
-import { Lan } from '../components/Lan';
 
 import {
     BrowserRouter,
@@ -13,16 +10,14 @@ import {
   } from "react-router-dom";
 
 
-export const RouterApp = ({ vuelos }) => {
+export const RouterApp = () => {
   return (
       <BrowserRouter>
               <Header />
-        <Routes>
-
-                  <Route exact path="/avianca" element={ <Avianca /> } />
-                  <Route exact path="/vivair" element={ <Vivair /> } />
-                  <Route exact path="/lan" element={ <Lan /> } />
-                  <Route path="/" element={ <HomeScreen /> } />
+          <Routes>
+                  <Route path="/" element={ <HomeScreen /> } >
+                   <Route path=":invoiceId" element={<HomeScreen />} />
+                  </Route>
                   <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </BrowserRouter>
