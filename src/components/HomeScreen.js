@@ -2,7 +2,6 @@ import React from 'react';
 import { useParams } from "react-router-dom";
 import { Form } from './Form';
 
-
 export const HomeScreen = () => {
 
     let params = useParams();
