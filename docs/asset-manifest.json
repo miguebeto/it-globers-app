@@ -1,16 +1,30 @@
 {
   "files": {
+<<<<<<< HEAD
     "main.css": "/static/css/main.3669dcb4.css",
     "main.js": "/static/js/main.aad95913.js",
+=======
+    "main.css": "/static/css/main.1b1a280a.css",
+    "main.js": "/static/js/main.439a15d3.js",
+>>>>>>> parent of 0350c0e (Revert "added optimizations and conditional rendering")
     "static/media/logo.svg": "/static/media/logo.442606a3c3fdaa4d937ca030773f60ba.svg",
     "index.html": "/index.html",
     "static/media/x.svg": "/static/media/x.34697784df6d41f8fadc0ce8a1cfa173.svg",
     "static/media/menu.svg": "/static/media/menu.96de8baf5fdca57a26776f055ab8e74c.svg",
+<<<<<<< HEAD
     "main.3669dcb4.css.map": "/static/css/main.3669dcb4.css.map",
     "main.aad95913.js.map": "/static/js/main.aad95913.js.map"
   },
   "entrypoints": [
     "static/css/main.3669dcb4.css",
     "static/js/main.aad95913.js"
+=======
+    "main.1b1a280a.css.map": "/static/css/main.1b1a280a.css.map",
+    "main.439a15d3.js.map": "/static/js/main.439a15d3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1b1a280a.css",
+    "static/js/main.439a15d3.js"
+>>>>>>> parent of 0350c0e (Revert "added optimizations and conditional rendering")
   ]
 }
