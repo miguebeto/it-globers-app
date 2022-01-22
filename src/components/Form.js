@@ -16,7 +16,7 @@ export const Form = () => {
     ev.preventDefault();
 
     if (title.trim().length <= 2) {
-      return alert("Debe digitar su nombre completo");
+      return alert('Debe digitar su nombre completo');
     }
 
     fetch("https://jsonplaceholder.typicode.com/posts", {
@@ -53,11 +53,9 @@ export const Form = () => {
       }}
     >
       <div className="mb-1">
-        <label className="col-sm-1 col-form-label" htmlFor="titulo">
-          Nombre:{" "}
-        </label>
-        <input
-          className="form-control-sm col-5"
+        <label className="col-sm-1 col-form-label" htmlFor="titulo">Nombre: </label>
+        <input 
+          className='form-control-sm col-5'  
           type="text"
           id="titulo"
           placeholder="Nombre ..."
@@ -67,11 +65,9 @@ export const Form = () => {
         />
       </div>
       <div className="mb-0">
-        <label className="col-sm-1 col-form-label" htmlFor="email">
-          Email:{" "}
-        </label>
-        <input
-          className="form-control-sm col-5"
+        <label className="col-sm-1 col-form-label" htmlFor="email">Email: </label>
+        <input 
+          className='form-control-sm col-5'  
           type="email"
           id="email"
           placeholder="nombre@mail.com"
@@ -81,11 +77,9 @@ export const Form = () => {
         />
       </div>
       <div className="mb-0">
-        <label className="col-sm-1 col-form-label" htmlFor="cellphone">
-          Celular:{" "}
-        </label>
-        <input
-          className="form-control-sm col-5"
+        <label className="col-sm-1 col-form-label" htmlFor="cellphone">Celular: </label>
+        <input 
+          className='form-control-sm col-5'  
           type="cellphone"
           id="cellphone"
           placeholder="cell ..."
@@ -95,11 +89,9 @@ export const Form = () => {
         />
       </div>
       <div className="mb-0">
-        <label className="col-sm-1 col-form-label" htmlFor="age">
-          Edad:{" "}
-        </label>
-        <input
-          className="form-control-sm"
+        <label className="col-sm-1 col-form-label" htmlFor="age">Edad: </label>
+        <input 
+          className='form-control-sm'  
           type="number"
           id="Age"
           placeholder="+18"
@@ -111,11 +103,9 @@ export const Form = () => {
         />
       </div>
       <div className="mb-4">
-        <label className="col-sm-1 col-form-label" htmlFor="range">
-          Fecha:{" "}
-        </label>
-        <input
-          className="form-control-sm"
+        <label className="col-sm-1 col-form-label" htmlFor="range">Fecha: </label>
+        <input 
+          className='form-control-sm'  
           type="date"
           id="date"
           placeholder=""

@@ -1,6 +1,6 @@
 import React, { useState, useContext } from "react";
-import { Context } from "../App";
-import { Link } from "react-router-dom";
+import { Context } from '../App';
+import { Link } from 'react-router-dom';
 import { ReactComponent as CloseMenu } from "../assets/x.svg";
 import { ReactComponent as MenuIcon } from "../assets/menu.svg";
 import { ReactComponent as Logo } from "../assets/logo.svg";
@@ -15,7 +15,7 @@ export const Header = () => {
   const context = useContext(Context);
 
   return (
-    <div className="header">
+    <div className="header"> 
       <div className="logo-nav">
         <div className="logo-container">
           <Link to="/">
@@ -23,11 +23,13 @@ export const Header = () => {
           </Link>
         </div>
         <ul className={click ? "nav-options active" : "nav-options"}>
-          {context.map((airline) => (
-            <li key={airline.id} className="option" onClick={closeMobileMenu}>
-              <Link to={`/${airline.name}`}>{airline.name}</Link>
-            </li>
-          ))}
+          {  
+            context.map((airline)=> (
+              <li key={airline.id} className="option" onClick={closeMobileMenu}>
+                 <Link to={`/${airline.name}`}>{airline.name}</Link>
+              </li>
+            ))
+          }
         </ul>
       </div>
       <div className="mobile-menu" onClick={handleClick}>
@@ -40,3 +42,4 @@ export const Header = () => {
     </div>
   );
 };
+
