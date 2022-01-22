@@ -23,9 +23,8 @@
   height: 45px;
 }
 .nav-options {
+  display: flex;
   padding-left: 25px;
-  display: grid;
-  grid-template-columns: repeat(3, auto);
   grid-gap: 50px;
   list-style-type: none;
 }
