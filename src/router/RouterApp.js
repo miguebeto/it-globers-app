@@ -18,11 +18,11 @@ export const RouterApp = ({ vuelos }) => {
       <BrowserRouter>
               <Header />
         <Routes>
-                  <Route exact path="/" element={ <HomeScreen /> } />
 
-                  <Route exact path="/avianca" element={ <Avianca vuelos={ vuelos } /> } />
-                  <Route exact path="/vivair" element={ <Vivair vuelos={ vuelos }/> } />
-                  <Route exact path="/lan" element={ <Lan vuelos={ vuelos }/> } />
+                  <Route exact path="/avianca" element={ <Avianca /> } />
+                  <Route exact path="/vivair" element={ <Vivair /> } />
+                  <Route exact path="/lan" element={ <Lan /> } />
+                  <Route path="/" element={ <HomeScreen /> } />
                   <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </BrowserRouter>
