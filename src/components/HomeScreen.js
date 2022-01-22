@@ -1,18 +1,17 @@
-import React from "react";
+import React from 'react';
 import { useParams } from "react-router-dom";
-import { Form } from "./Form";
+import { Form } from './Form';
+
 
 export const HomeScreen = () => {
-  let params = useParams();
 
-  return (
-    <div>
-      <h1>Home</h1>
-      <h3 style={{ padding: "40px" }}>
-        Hola, Bienvenido, sabemos que quieres viajar en un{" "}
-        {params.invoiceId === "it-globers-app" ? null : params.invoiceId}
-      </h3>
-      <Form />
-    </div>
-  );
+    let params = useParams();
+
+    return (
+        <div>
+            <h1>Home</h1>
+            <h3 style={{ padding: "40px" }}>Hola, Bienvenido, sabemos que quieres viajar en un {params.nameAirline === 'it-globers-app' ? null : params.nameAirline}</h3>
+            <Form />
+        </div>
+    )
 };
