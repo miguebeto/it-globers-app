@@ -8,9 +8,10 @@
   height: 80px;
 }
 .logo-nav {
+  width: 95rem;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 .logo-container {
   display: flex;
@@ -36,6 +37,11 @@
 .mobile-menu {
   display: none;
 }
+
+.menu-icon {
+  display: none;
+}
+
 @media (max-width: 920px) {
   /*Mobile View */
   .header {
@@ -64,11 +70,12 @@
     opacity: 1;
     transition: all 0.5s ease;
     z-index: 1;
-    align-content: center;
+    align-content: flex-start;
     padding-left: 0px;
   }
 
   .menu-icon {
+    display: flex;
     width: 45px;
     height: 45px;
   }
@@ -83,3 +90,6 @@
 .mobile-menu {
   display: block;
 }
+
+
+

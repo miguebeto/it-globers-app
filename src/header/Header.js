@@ -1,29 +1,31 @@
 import React, { useState } from "react";
-import { BrowserRouter } from "react-router-dom";
+import { Link } from 'react-router-dom';
 import { ReactComponent as CloseMenu } from "../assets/x.svg";
 import { ReactComponent as MenuIcon } from "../assets/menu.svg";
 import { ReactComponent as Logo } from "../assets/logo.svg";
 import "./header.css";
 
-const Header = () => {
+export const Header = () => {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
   return (
-    <BrowserRouter>
     <div className="header"> 
       <div className="logo-nav">
         <div className="logo-container">
-          <a href="#">
+          <Link to="/">
             <Logo className="logo" />
-          </a>
+          </Link>
         </div>
         <ul className={click ? "nav-options active" : "nav-options"}>
           <li className="option" onClick={closeMobileMenu}>
-            <a href="#">ABOUT</a>
+            <Link to="/avianca">Avianca</Link>
           </li>
           <li className="option" onClick={closeMobileMenu}>
-            <a href="#">CONTACT</a>
+            <Link to="/vivair">Vivair</Link>
+          </li>
+          <li className="option" onClick={closeMobileMenu}>
+            <Link to="/lan">Lan</Link>
           </li>
         </ul>
       </div>
@@ -35,8 +37,6 @@ const Header = () => {
         )}
       </div>
     </div>
-    </BrowserRouter>
   );
 };
 
-export default Header;
