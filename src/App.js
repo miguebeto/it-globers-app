@@ -12,8 +12,7 @@ export default function App() {
     {id: 1, name: 'Vivair'},
     {id: 2, name: 'Avianca'},
     {id: 3, name: 'Lan'},
-    {id: 4, name: 'Latam'},
-    {id: 5, name: 'Vivacolombia'},
+    {id: 4, name: 'Vivacolombia'},
   ]
 
   return (
